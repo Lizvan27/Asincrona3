@@ -1,0 +1,11 @@
+<div id="in">
+    <input id="caja" type="text" #nombre placeholder="JavaScript">
+    <button id="btn" (click)="addCurso(nombre.value)">Agregar Curso</button>
+</div>
+<div>
+    <ul>
+        <div *ngFor="let nom of cursos">
+            <li>{{nom}}</li>
+        </div>
+    </ul>
+</div>
